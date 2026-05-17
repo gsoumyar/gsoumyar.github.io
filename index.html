@@ -237,7 +237,7 @@ nav {
 .sk-item {}
 .sk-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
 .sk-name { font-size: 13px; color: var(--text2); }
-.sk-pct { font-size: 11px; color: var(--text3); font-weight: 500; }
+
 .sk-track { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
 .sk-bar { height: 100%; background: linear-gradient(90deg, var(--amber3), var(--amber)); width: 0; transition: width 1.4s cubic-bezier(0.16,1,0.3,1); border-radius: 2px; }
 
@@ -492,38 +492,70 @@ footer span { color: var(--amber2); }
 <div class="wrap" id="skills">
   <div class="sec-label">Expertise</div>
   <h2 class="sec-title">What I <em>work with.</em></h2>
-  <div class="sk-grid">
-    <div class="sk-block">
+  <div class="sk-grid" style="grid-template-columns: 1fr 1fr; gap: 24px;">
+    <div class="sk-block reveal">
       <div class="sk-head">Data & Analytics</div>
-      <div class="sk-list">
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">SQL / T-SQL</span><span class="sk-pct">95%</span></div><div class="sk-track"><div class="sk-bar" data-w="95"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Python</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Power BI / DAX</span><span class="sk-pct">92%</span></div><div class="sk-track"><div class="sk-bar" data-w="92"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Apache Spark</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-bar" data-w="70"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Snowflake</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-bar" data-w="65"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">dbt</span><span class="sk-pct">60%</span></div><div class="sk-track"><div class="sk-bar" data-w="60"></div></div></div>
+      <div class="sk-tags">
+        <span class="sk-tag">SQL</span>
+        <span class="sk-tag">T-SQL</span>
+        <span class="sk-tag">Python</span>
+        <span class="sk-tag">Power BI</span>
+        <span class="sk-tag">DAX</span>
+        <span class="sk-tag">SSIS</span>
+        <span class="sk-tag">Snowflake</span>
+        <span class="sk-tag">dbt</span>
+        <span class="sk-tag">Apache Spark</span>
+        <span class="sk-tag">Tableau</span>
+        <span class="sk-tag">Pandas</span>
+        <span class="sk-tag">NumPy</span>
+        <span class="sk-tag">VADER</span>
+        <span class="sk-tag">NLP</span>
       </div>
     </div>
-    <div class="sk-block" style="transition-delay:0.12s">
+    <div class="sk-block reveal d1">
       <div class="sk-head">Cloud & Infrastructure</div>
-      <div class="sk-list">
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">AWS</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Microsoft Azure</span><span class="sk-pct">75%</span></div><div class="sk-track"><div class="sk-bar" data-w="75"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">ETL Pipelines</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Kafka</span><span class="sk-pct">60%</span></div><div class="sk-track"><div class="sk-bar" data-w="60"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Docker</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-bar" data-w="65"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Star Schema / DWH</span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-bar" data-w="90"></div></div></div>
+      <div class="sk-tags">
+        <span class="sk-tag">AWS</span>
+        <span class="sk-tag">Microsoft Azure</span>
+        <span class="sk-tag">ETL Pipelines</span>
+        <span class="sk-tag">Kafka</span>
+        <span class="sk-tag">Docker</span>
+        <span class="sk-tag">Star Schema</span>
+        <span class="sk-tag">Data Warehousing</span>
+        <span class="sk-tag">Data Modeling</span>
+        <span class="sk-tag">HIPAA Compliance</span>
+        <span class="sk-tag">Row-Level Security</span>
       </div>
     </div>
-    <div class="sk-block" style="transition-delay:0.24s">
+    <div class="sk-block reveal d2">
       <div class="sk-head">Engineering & AI</div>
-      <div class="sk-list">
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">FastAPI / Flask</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">REST APIs</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">RAG / LLM Integration</span><span class="sk-pct">78%</span></div><div class="sk-track"><div class="sk-bar" data-w="78"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Machine Learning</span><span class="sk-pct">74%</span></div><div class="sk-track"><div class="sk-bar" data-w="74"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Java / Spring Boot</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-bar" data-w="65"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">Git</span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-bar" data-w="90"></div></div></div>
+      <div class="sk-tags">
+        <span class="sk-tag">FastAPI</span>
+        <span class="sk-tag">Flask</span>
+        <span class="sk-tag">REST APIs</span>
+        <span class="sk-tag">Spring Boot</span>
+        <span class="sk-tag">Java</span>
+        <span class="sk-tag">RAG</span>
+        <span class="sk-tag">LLM Integration</span>
+        <span class="sk-tag">Vector Embeddings</span>
+        <span class="sk-tag">ChromaDB</span>
+        <span class="sk-tag">Machine Learning</span>
+        <span class="sk-tag">scikit-learn</span>
+        <span class="sk-tag">Git</span>
+      </div>
+    </div>
+    <div class="sk-block reveal d3">
+      <div class="sk-head">Databases & Visualization</div>
+      <div class="sk-tags">
+        <span class="sk-tag">SQL Server</span>
+        <span class="sk-tag">MySQL</span>
+        <span class="sk-tag">PostgreSQL</span>
+        <span class="sk-tag">SQLite</span>
+        <span class="sk-tag">Azure SQL</span>
+        <span class="sk-tag">Plotly</span>
+        <span class="sk-tag">Looker Studio</span>
+        <span class="sk-tag">Excel</span>
+        <span class="sk-tag">Power Query</span>
       </div>
     </div>
   </div>
@@ -666,13 +698,7 @@ document.querySelectorAll('.cert-card').forEach(el=>obs.observe(el));
 // Contact cards
 document.querySelectorAll('.cc-card').forEach(el=>obs.observe(el));
 
-// SKILL BARS
-const skObs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting) e.target.querySelectorAll('.sk-bar').forEach(b=>{b.style.width=b.dataset.w+'%';});
-  });
-},{threshold:0.3});
-document.querySelectorAll('.sk-block').forEach(b=>skObs.observe(b));
+
 
 // COUNT UP STATS
 const stObs = new IntersectionObserver(entries=>{
